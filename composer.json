@@ -1,0 +1,13 @@
+{
+    "name": "haoyuqi/sort-function",
+    "description": "PHP sort function",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hao Yuqi",
+            "email": "hi.haoyuqi+github@gmail.com"
+        }
+    ],
+    "require": {}
+}
