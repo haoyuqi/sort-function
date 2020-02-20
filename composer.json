@@ -1,6 +1,6 @@
 {
     "name": "haoyuqi/sort-function",
-    "description": "PHP sort function",
+    "description": "PHP sort functions",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -9,5 +9,10 @@
             "email": "hi.haoyuqi+github@gmail.com"
         }
     ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
     "require": {}
 }
