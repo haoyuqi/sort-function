@@ -88,3 +88,31 @@ if (!function_exists('select_sort')) {
         return $arr;
     }
 }
+
+if (!function_exists('insert_sort')) {
+    /**
+     * 插入排序
+     * @param $arr
+     * @return mixed
+     */
+    function insert_sort($arr)
+    {
+        $count = count($arr);
+
+        if ($count < 2) {
+            return $arr;
+        }
+
+        for ($i = 1; $i < $count; $i++) {
+            $temp = $arr[$i];
+            for ($k = $i - 1; $k >= 0; $k--) {
+                if ($temp < $arr[$k]) {
+                    $arr[$k + 1] = $arr[$k];
+                    $arr[$k] = $temp;
+                }
+            }
+        }
+
+        return $arr;
+    }
+}
